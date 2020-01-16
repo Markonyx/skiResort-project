@@ -1,0 +1,7 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item" *ngFor="let r of resorts">
+      <a class="nav-link" [routerLink]="['ski-resorts', r._id]" routerLinkActive="active">{{r.name}}</a>
+    </li>
+  </ul>
+</nav>
